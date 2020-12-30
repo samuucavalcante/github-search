@@ -89,6 +89,11 @@ export const Form = styled.form`
     ${(props) => props.isErrored && css`
     border-color: #c53030;
   `}
+    &::placeholder {
+      font-size: 11px;
+      color: gray;  
+    }
+
   }
   button {
     padding: 14px 30px;
@@ -114,8 +119,8 @@ export const Form = styled.form`
 
 
 export const Err = styled.div`
-  margin-left: 18%;
-  height: 0px;
+  margin-left: 7.2%;
+  position: absolute;
   span {
     color: #c53030;
     font-size: 10px;

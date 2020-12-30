@@ -49,6 +49,7 @@ const Main = () => {
       <Container>
         <Form isErrored={!!isError} onSubmit={handleSubmit} >
           <input
+            placeholder="Digite user/repositório Ex: angular/angular"
            value={newRepo}
            onChange={e => setNewRepo(e.target.value)}
            type="text"
